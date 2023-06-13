@@ -18,7 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ prompt }),
+      body: JSON.stringify({
+        messages: [
+          { role: "system", content: "You are a helpful assistant." },
+          { role: "user", content: prompt },
+        ],
+      }),
     };
 
     try {
@@ -33,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         throw new Error(`Error: ${response.status}, ${message}`);
       }
       const data = await response.json();
-      responseContainer.innerText = JSON.stringify(data);
+      responseContainer.innerText = data.choices[0].message.content;
     } catch (err) {
       console.error("Error:", err);
       responseContainer.innerText = "An error occurred. Please try again.";

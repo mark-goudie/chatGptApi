@@ -23,7 +23,13 @@ app.post("/api/chat", async (req, res) => {
       {
         model: "gpt-3.5-turbo",
         messages,
-        temperature: 0.7,
+        temperature: 1,
+        top_p: 1,
+        n: 1,
+        stream: false,
+        max_tokens: 250,
+        presence_penalty: 0,
+        frequency_penalty: 0,
       },
       { headers: { Authorization: `Bearer ${process.env.OPENAI_API_KEY}` } }
     );
@@ -42,6 +48,7 @@ app.post("/api/chat", async (req, res) => {
     res.status(500).json({
       error:
         "An error occurred while trying to get chat completion from OpenAI API.",
+      details: err.message,
     });
   }
 });

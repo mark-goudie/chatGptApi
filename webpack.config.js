@@ -41,7 +41,7 @@ module.exports = {
     },
     compress: true,
     port: 8000,
-    hot: true,
+    // hot: true,
     watchFiles: ["src/**/*"], // Watching all files in src directory
   },
 };
