@@ -142,16 +142,16 @@ a {
 
 #response-container {
   display: flex;
-  padding-left: 3.2rem;
   flex-direction: column;
   align-self: start;
   gap: 2.4rem;
   margin-top: 20px;
   margin-left: 3.2rem;
-  padding: 20px;
+  padding: 40px 20px; // top and bottom padding is 40px, left and right padding is 20px
   background: #333;
   color: #fff;
   border-radius: 9px;
   font-size: 1.8rem;
   font-weight: 500;
+  line-height: 2.2rem;
 }
