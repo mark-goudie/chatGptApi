@@ -81,8 +81,4 @@ dist
 # Storybook build output
 .storybook-out/
 
-# Compiled Javascript files
-*.js
-*.js.map
-
 # End of https://www.toptal.com/developers/gitignore/api/node
