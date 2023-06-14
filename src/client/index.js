@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       // Change the URL here
       const response = await fetch(
-        "http://localhost:3000/api/chat",
+        "https://serene-lake-82084.herokuapp.com//api/chat",
         requestPayload
       );
 
