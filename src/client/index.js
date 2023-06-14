@@ -1,7 +1,5 @@
 import "../css/style.scss";
 
-const API_URL = process.env.API_URL || "";
-
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("prompt-form");
   const responseContainer = document.getElementById("response-container");
@@ -45,7 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       // Change the URL here
-      const response = await fetch(`${API_URL}/api/chat`, requestPayload);
+      const response = await fetch(
+        "http://localhost:3000/api/chat",
+        requestPayload
+      );
 
       // Once response is received, clear the interval
       clearInterval(window.loadingInterval);
