@@ -43,10 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       // Change the URL here
-      const response = await fetch(
-        "https://serene-lake-82084.herokuapp.com//api/chat",
-        requestPayload
-      );
+      const response = await fetch(`${API_URL}/api/chat`, requestPayload);
 
       // Once response is received, clear the interval
       clearInterval(window.loadingInterval);
