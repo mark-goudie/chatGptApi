@@ -7,6 +7,7 @@ const app = express();
 
 app.use(express.json()); // for parsing application/json
 app.use(cors());
+app.use(express.static("dist"));
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
@@ -27,7 +28,7 @@ app.post("/api/chat", async (req, res) => {
         top_p: 1,
         n: 1,
         stream: false,
-        max_tokens: 250,
+        max_tokens: 1000,
         presence_penalty: 0,
         frequency_penalty: 0,
       },

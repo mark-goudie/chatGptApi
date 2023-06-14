@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server/server.js",
+    "heroku-postbuild": "webpack --mode production",
     "build": "webpack --mode production",
-    "postinstall": "npm run build",
     "server": "nodemon src/server/server.js",
     "dev": "webpack serve --open"
   },
@@ -36,6 +36,6 @@
     "webpack-dev-server": "^4.15.0"
   },
   "engines": {
-    "node": "18.14.2"}    
+    "node": "18.14.2"
+  }
 }
-
