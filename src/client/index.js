@@ -1,4 +1,5 @@
 import "../css/style.scss";
+const dotenv = require("dotenv");
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("prompt-form");
