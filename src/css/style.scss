@@ -26,25 +26,25 @@ h1 {
   font-weight: 600;
   line-height: 1.1;
   margin: 4.8rem 0 4.8rem 0;
-  padding-left: 3.2rem;
+  padding-left: 2.4rem;
   letter-spacing: 0.2rem;
 }
 
 p {
   font-size: 1.6rem;
   margin-bottom: 20px;
-  padding-left: 3.2rem;
+  padding-left: 2.4rem;
 }
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 3.6rem;
+  padding: 3.2rem;
 }
 
 .contentbox {
   display: flex;
-  padding-left: 3.2rem;
+  padding-left: 2.4rem;
   flex-direction: column;
   align-self: start;
   gap: 2.4rem;
@@ -63,7 +63,7 @@ p {
 .contentbox select {
   width: 100%;
   margin-bottom: 1.2rem;
-  padding: 1.2rem;
+  padding: 1.6rem 1.8rem;
   font-size: 1.8rem;
   font-weight: 500;
   font-family: inherit;
@@ -109,7 +109,7 @@ p {
   align-self: start;
   gap: 2.4rem;
   margin-top: 20px;
-  margin-left: 3.2rem;
+  margin-left: 2.4rem;
   padding: 40px 20px; // top and bottom padding is 40px, left and right padding is 20px
   background: #ccd6f6;
   color: #0a192f;
